@@ -14,4 +14,14 @@
       <p>Текст</p>
   </li>
 */
-console.log(first);
+
+import {
+  handleSubmitClick,
+  handleDeleteClick,
+  handleDOMContentLoaded,
+} from './js/handlers';
+import { refs } from './js/refs';
+
+document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+refs.list.addEventListener('click', handleDeleteClick);
+refs.form.addEventListener('submit', handleSubmitClick);

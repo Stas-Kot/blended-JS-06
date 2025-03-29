@@ -111,3 +111,12 @@ body.theme-light .theme-toggle-button {
 .theme-toggle-button:hover {
   transform: scale(1.1);
 }
+
+.wrapper {
+  display: flex;
+}
+
+.date-of-creation {
+  font-size: 15px;
+  color: rgb(53, 134, 184);
+}
