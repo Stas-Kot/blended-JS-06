@@ -14,3 +14,4 @@
       <p>Текст</p>
   </li>
 */
+console.log(first);
