@@ -19,9 +19,11 @@ import {
   handleSubmitClick,
   handleDeleteClick,
   handleDOMContentLoaded,
+  handleChangeTheme,
 } from './js/handlers';
 import { refs } from './js/refs';
 
 document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
 refs.list.addEventListener('click', handleDeleteClick);
 refs.form.addEventListener('submit', handleSubmitClick);
+refs.changeThemeBtn.addEventListener('click', handleChangeTheme);

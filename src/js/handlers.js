@@ -1,8 +1,9 @@
 import { STORAGE_KEYS } from './constants';
-import { tasksArray } from './data';
+import { tasksArray, theme } from './data';
 import { saveToLocalStorage } from './local-storage-api';
 import { renderTasks } from './render-tasks';
 import { createTask } from './tasks';
+import { changeTheme, currentTheme } from './theme-switcher';
 
 export function handleSubmitClick(event) {
   event.preventDefault();
@@ -40,4 +41,9 @@ export function handleDeleteClick(e) {
 
 export function handleDOMContentLoaded() {
   renderTasks(tasksArray);
+  currentTheme(theme);
+}
+
+export function handleChangeTheme() {
+  changeTheme();
 }
